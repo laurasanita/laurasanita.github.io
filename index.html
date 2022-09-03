@@ -1,3 +1,606 @@
+<!doctype html>
 <html>
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Laura Sanità</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='description' content="Laura Sanità web page">
+	<meta name='keywords' content="Laura Sanità, University of Waterloo, Associate Professor">
+	<style>
+		body {
+			font-family: 'Arial', sans;
+			margin: 0em;
+			padding: 0em;
+		}
+		
+		.anchor:before {
+			display: block;
+			content: " ";
+			margin-top: -3em;
+			height: 3em;
+			visibility: hidden;
+		}
+		
+		h1 {
+			margin-top: -5px;
+		}
+
+		h4 {
+			margin: 1.2em 0em 0.2em 0em;
+		}
+		
+		h2, h3, h4, h5 {
+			 color: #0c5299;
+		}
+		
+		li {
+			padding-bottom: 0.5em;
+		}
+		
+		hr {
+			margin-top: 2.2em;
+		}
+
+		table.bio tr td {
+			padding: 0.0em 0.5em 0.0em 0.5em;
+			vertical-align: top;
+		}
+
+		table.bio tr td:first-of-type {
+			padding-left: 0em;
+			text-align: right;
+			font-weight: bold;
+			white-space: nowrap;
+			color: #888;
+		}
+
+		img.pic {
+			/*float: right;*/
+			vertical-align: top;
+			padding-right: 1em;
+			margin-bottom: 1em;
+			/*width: 256px;*/
+		}
+
+		img.nil {
+			display: none;
+		}
+
+		h2.position {
+			margin-bottom: 0.2em;
+		}
+
+		span.period {
+			font-weight: bold;
+			color: #888;
+		}
+
+		span.period a {
+			font-weight: normal;
+			text-decoration: none;
+			color: rgba(0, 0, 128, 1.0);
+		}
+
+		span.remark {
+			color: #000;
+		}
+
+		/* cyan 26bd9e, blue 4a99c9, orange ff694c */
+		span.journal {
+			color: #ff694c /*rgba(192, 0, 0, 1.0)*/;
+		}
+
+		span.conference {
+			color: #4a99c9 /*rgba(125, 38, 205, 1.0)*/;
+		}
+
+		span.other {
+			color: #26bd9e /*rgba(255, 127, 0, 1.0)*/;
+		}
+
+		ul.studentlist {
+			padding-bottom: 0.3em;
+		}
+
+		a {
+			text-decoration: underline dotted #acf;
+			text-underline-offset: 4px;
+			color: #049;
+		}
+
+		div.nav {
+			background-color: #000;
+			font-family: 'Arial', sans;
+			font-size: 100%;
+			overflow: hidden;
+			position: fixed;
+			z-index: 1000;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			margin: 0em;
+			padding: 0em;
+		}
+
+		/* navigation bar: logo */
+		div.nav > a {
+			float: right;
+
+			display: inline-block;
+			padding: 0.5em 1.2em 0.55em 1.2em;
+			margin: 0em;
+			color: rgba(255, 255, 255, 1.0);
+		}
+
+		div.nav > a > img {
+			height: 2em;
+			margin: 0em;
+			padding: 0em;
+			vertical-align: bottom;
+		}
+
+		/* navigation bar: sections */
+		div.nav > ul {
+			float: none;
+			list-style: none;
+			margin: 0em;
+			padding: 0em 0em 0em 1.2em;
+		}
+
+		div.nav > ul > li {
+			display: inline;
+			margin: 0em;
+			padding: 0em;
+		}
+
+		div.nav > ul > li > a {
+			display: inline-block;
+			padding: 1em 1.2em 1em 1.2em;
+			color: rgba(255, 255, 255, 1.0);
+			text-decoration: none;
+		}
+
+		div.nav > ul > li a:hover {
+			background-color: #0d549b;
+			/*color: rgba(240, 60, 70, 1.0);*/
+			/*rgba(252, 214, 52, 1.0);*/
+			/*rgba(0, 130, 255, 1.0);*/
+		}
+		
+		div.content {
+			padding: 6em 2em 2em 2em;
+			margin: 0em;
+		}
+
+		div.inline {
+			display: inline-block;
+		}
+		
+		@media (max-width: 720px) {
+			div.content {
+				padding: 4em 0.5em 1em 0.5em;
+			}
+			
+			div.nav > ul {
+				padding: 0em 0em 0em 0.5em;
+			}
+			
+			div.nav > ul > li > a {
+				padding: 1em 0.5em 1em 0.5em;
+			}
+			
+			div.nav > ul > li.optional {
+				display: none;
+			}
+
+			table.bio tr td {
+				display: block;
+			}
+
+			table.bio tr td:first-of-type {
+				text-align: left;
+				padding-top: 0.3em;
+			}
+		}
+	</style>
+</head>
+
+
+<body>
+
+<!-- ********************************************************************* -->
+<div class="nav">
+<a href="https://www.unibocconi.eu/"><img src="logo-bocconi.png" alt="Bocconi" /></a>
+<ul>
+	<li><a href="#">Home</a></li>
+	<li class="optional"><a href="#bio">Bio</a></li>
+	<li class="optional"><a href="#activities">Activities</a></li>
+	<li><a href="#pub">Publications</a></li>
+	<li class="optional"><a href="#students">Students</a></li>
+</ul>
+</div>
+
+<div class="content">
+
+<!-- ********************************************************************* -->
+<img src="laura_sanita.jpeg" class="pic" alt=" " />
+<div class="inline">
+	<h1>Laura Sanità</h1>
+	<h2 class="position">Associate Professor</h2>
+	Department of Computing Sciences<br />
+	Bocconi University<br />
+	Via Roentgen, 1 (3rd floor)<br />
+	20136 Milano, Italy
+	
+	<h4>Research Interests:</h4>
+	Network Design,
+	Approximation Algorithms,
+	Combinatorial Optimization,
+	Operations Research <br />
+	<br />
+</div>
+
+<!-- ********************************************************************* -->
+<hr />
+
+<h3 class="anchor" id="bio">Short Bio</h3>
+
+<table class="bio">
+
+<tr><td>July 2003:</td><td>
+Bachelor's degree in Management Engineering, from "Università di Roma Tor Vergata", Italy.<br />
+</td></tr>
+
+<tr><td>October 2005:</td><td>
+Master's degree in Management Engineering, from "Università di Roma Tor Vergata", Italy.<br />
+</td></tr>
+
+
+<tr><td>January 2009:</td><td>
+Doctoral degree in Operations Research, from "Università Sapienza di Roma", Rome, Italy.<br />
+</td></tr>
+
+<tr><td>February 2009 &mdash; August 2011:</td><td>
+PostDoc at Discrete Optimization Group, EPFL, Lausanne, Switzerland.<br />
+</td></tr>
+
+<tr><td>September 2011 &mdash; December 2011:</td><td>
+World Trip (<a href="itinerario-3.png">here</a> is my route!)<br />
+</td></tr>
+
+<tr><td>January 2012 &mdash; June 2017:</td><td>
+Assistant Professor at C&amp;O, University of Waterloo, Canada. 
+</td></tr>
+
+<tr><td>July 2017 &mdash; January 2021:</td><td>
+Associate Professor at C&amp;O, University of Waterloo, Canada.
+</td></tr>
+
+<!--
+<tr><td>...since February 2021:</td><td>
+Adjunct Professor at C&amp;O, University of Waterloo, Canada.
+</td></tr>
+-->
+
+<tr><td>February 2020 &mdash; August 2022:</td><td>
+Associate Professor at TU Eindhoven, Netherlands.
+</td></tr>
+
+<tr><td>...since August 2022:</td><td>
+Associate Professor at Bocconi University, Italy.
+</td></tr>
+
+</table>
+
+<!-- ********************************************************************* -->
+<hr />
+
+<h3 class="anchor" id="activities">Activities</h3>
+
+<table class="bio">
+
+<tr><td>News:</td><td> We will organize <a href="https://www.ipco2022.com/home">IPCO 2022</a> in Eindhoven!<br />
+ We are organizing a Hausdorff Trimester Research Program in 
+ <a href="https://www.him.uni-bonn.
+de/programs/future-programs/future-trimester-programs/
+discrete-optimization/description/">“Discrete Optimization”</a>
+in Fall 2021 -- check for events!<br />
+Since February 2021, I am also affiliated with the University of Waterloo as an adjunct professor.
+</td></tr>
+<tr><td>Program Committees:</td><td> 
+ <a href="https://approxconference.wordpress.com/">APPROX 2021</a> (Chair), MFCS 2021, WADS 2021, CanaDAM
+2021, CSR 2021, ESA 2020, APPROX 2020, WAOA 2020, SODA 2020, SODA 2019,  
+ FUN 2018, ISAAC 2017, APPROX 2017, SPAA 2017, IPCO 2017, WAOA 2015 (Co-chair), WAOA 2014, ESA 2014.
+</td></tr>
+<tr><td>Editorship:</td><td> 
+Associate Editor of the journals "Mathematical Programming", "Discrete Optimization" and "Operations Research Letters".
+</td></tr>
+<tr><td>Some awards:</td><td> 
+ Recipient of a 
+<a href="https://www.nwo.nl/en/news/81-researchers-receive-nwo-vidi-grant-worth-800000-euros#:~:text=The%20Dutch%20Research%20Council%20has,in%20the%20coming%20five%20years">NWO-VIDI award</a>, from the Dutch Research Council, Netherlands.
+</td></tr>
+<tr><td></td><td> 
+Recipient of a 2019 
+<a href="http://www.nserc-crsng.gc.ca/professors-professeurs/grants-subs/dgas-sgsa_eng.asp">Discovery Accelerator Supplements</a> Award, from the Natural Sciences 
+and Engineering Research Council of Canada (NSERC).
+</td></tr>
+<tr><td></td><td> 
+Recipient of a UWaterloo Faculty of Mathematics <a href="https://uwaterloo.ca/math/research/research-resources-and-awards-faculty">Golden Jubilee Research Excellence Award</a>.
+</td></tr>
+<tr><td></td><td> 
+ Recipient of 2015
+	<a href="https://www.ontario.ca/page/early-researcher-awards">Early Researcher Award</a>
+	administered by the Province of Ontario.
+
+</td></tr>
+<tr><td></td><td> 
+ Co-recipient of the <a href="https://www.sigact.org/prizes/best_paper.html">Best Paper Award</a> at the conference STOC 2010.
+</td></tr>
+
+
+
+
+</table>
+
+
+<!-- ********************************************************************* -->
+<hr />
+
+<h3 class="anchor" id="pub">Selected Publications</h3>
+
+<p><span class="remark"><b>Note:</b>
+Colours distinguish
+<span class="journal">Journals</span>,
+<span class="conference"> Conference Proceedings</span>, or
+<span class="other">Others</span>.
+On papers authors are listed in alphabetical order.</span>
+</p>
+
+                        
+<ul>
+<li> Z. K. Koh, L. Sanità,
+<em>Stabilizing weighted graphs</em>,<br /> 
+<span class="journal">Mathematics of Operations Research</span>, Mathematics of Operations Research 45(4), pages 1318-1341, 2020. </li>
+
+<li> Z. K. Koh, L. Sanità,
+<em>An efficient characterization of submodular spanning tree games</em>,<br /> 
+<span class="journal">Mathematical Programming</span>, 183, 1-2, pages 359-377, 2020. </li>
+
+
+<li> Z. K. Koh, L. Sanità, 
+<em>An efficient characterization of submodular spanning tree games</em>, <br />  
+<span class="conference">IPCO 2019 </span> (20th conference on Integer Programming and Combinatorial Optimization), pages 275-287.  </li>
+
+<li> S. Kafer, K. Pashkovich, L. Sanità, 
+<em>On the circuit diameter of some combinatorial polytopes</em>, <br />  
+<span class="journal">Siam Journal on Discrete Mathematics</span>, 33(1): 1-25, 2019. </li>
+
+<li> L. Sanità,
+<em>The diameter of the fractional matching polytope and its hardness implications</em>,<br /> 
+<span class="conference">FOCS 2018</span> (59th Annual IEEE Symposium on Foundations of Computer Science), pages 910-921. </li>
+
+<li> S. Ahmadian, U. Bhaskar, L. Sanità, C. Swamy,
+<em>Algorithms for Inverse Optimization Problems</em>,<br /> 
+<span class="conference">ESA 2018</span> (26th Annual European Symposium on Algorithms), pages 1:1-1:14. </li>
+
+<li> Z. K. Koh, L. Sanità,
+<em>Stabilizing weighted graphs</em>,<br /> 
+<span class="conference">ICALP 2018</span> (45th International Colloquium on Automata, Languages, and Programming), pages 83:1-83:13. </li>
+
+<li> S. Fiorini, M. Gross, J. Koenemann, L. Sanità,
+<em>Approximating Tree Augmentation via Chvatal-Gomory cuts</em>,<br /> 
+<span class="conference">SODA 2018</span> (29th ACM-SIAM Symposium on Discrete Algorithms), pages 817-831. </li>	
+
+<li> S. Ahmadian, H. Hosseinzadeh, L. Sanità, 
+<em>Stabilizing network bargaining games by blocking players</em>, <br />  
+<span class="journal">Mathematical Programming</span>, 172(1): 249-275, 2018. </li>
+
+<li>A. Abdi, R. Fukasawa, L. Sanità,
+<em>Opposite elements in clutters</em>,<br /> 
+<span class="journal">Mathematics of Operations Research</span>,
+Volume 43, No. 2, pages 428-459, 2018.</li>
+
+<li> G. Guruganesh, J. Iglesias, R Ravi, L. Sanità,
+<em>Single-sink Fractionally Subadditive Network Design</em>,<br /> 
+<span class="conference">ESA 2017</span> (25th European Symposium on Algorithms), pages 46:1-46:13. </li>	
+
+<li>T. Rothvoss, L. Sanità,
+<em>0/1 Polytopes with quadratic Chvatal rank</em>,<br /> 
+<span class="journal">Operations Research</span>,
+65(1): 212-220, 2017.</li>
+
+
+<li> A. Feldmann, J. Koenemann, K. Pashkovich, L. Sanità, 
+<em>Fast Approximation Algorithms for the Generalized Survivable Network Design Problem</em>, <br />  
+<span class="conference">ISAAC 2016 </span> (International symposium on algorithms and computation), pages 33:1-33:12. </li>
+
+<li> S. Ahmadian, H. Hosseinzadeh, L. Sanità, 
+<em>Stabilizing network bargaining games by blocking players</em>, <br />  
+<span class="conference">IPCO 2016 </span> (18th conference on Integer Programming and Combinatorial Optimization), pages 164-177. </li>
+
+<li> A. Feldman, J. Koenemann, N. Olver, L. Sanità,
+<em>On the equivalence of the bidirected and hypergraphic relaxations for Steiner tree</em>,<br />
+<span class="journal">Mathematical Programming</span>, Volume 160, pages 379-406, 2016.</li>
+
+<li> A. Abdi, A. Feldmann, B. Guenin, J. Koenemann, L. Sanità, 
+<em>Lehman's Theorem and the Directed Steiner Tree Problem</em>,  <br />  
+<span class="journal">SIAM Journal on Discrete Mathematics,</span>  Volume 30 Issue 1, pages 141-153, 2016. </li>
+
+<li> G. Guruganesh, L. Sanità, C. Swamy,
+<em>Improved Region-Growing and Combinatorial Algorithms for k-Route Cut Problems</em>, <br /> 
+<span class="conference">SODA 2015</span> (ACM-SIAM Symposium on Discrete Algorithms), pages 676-695. </li>
+
+<li> H. Efsandiari, M. Hajiaghayi, J. Koenemann, H. Mahini, D.L. Malec, L. Sanità,
+<em>Approximate Deadline-Scheduling with Precedence Constraints</em>,<br /> 
+<span class="conference">ESA 2015</span> (23rd European Symposium on Algorithms), pages 483-495. </li>	
+
+<li> A. Bock, K. Chandrasekaran, J. Koenemann, B. Peis, L. Sanità,
+<em>Finding small stabilizers for unstable graphs</em>, <br /> 
+<span class="journal">Mathematical Programming,</span> Volume 154, pages 173-196, 2015. </li>
+
+<li>Y. Faenza, L. Sanità,
+<em>On the existence of compact eps-approximated formulations for Knapsack in the original space</em>, <br />
+<span class="journal">Operations Research Letters</span>, Volume 43 Issue 3, pages 339-342, 2015.
+
+
+<li>J. Byrka, A. Karrenbauer, L. Sanità,
+<em>The interval constrained 3-coloring problem</em>, <br />
+<span class="journal">Theoretical Computer Science</span>, Volume 593 Issue C, pages 42-50, 2015.
+
+
+<li> A. Bock, L. Sanità,
+<em>The capacitated orienteering problem</em>,<br /> 
+<span class="journal">Discrete Applied Mathematics,</span> Volume 195, pages 31-42, 2015. </li>
+
+<li> M. Di Summa, D. Pritchard, L. Sanità,
+<em>Finding the closest ultrametric</em>,<br /> 
+<span class="journal">Discrete Applied Mathematics,</span> Volume 180, pages 70-80, 2015. </li>
+
+<li> A. Bock, K. Chandrasekaran, J. Koenemann, B. Peis, L. Sanità,
+<em>Finding small stabilizers for unstable graphs</em>, <br /> 
+<span class="conference">IPCO 2014</span>
+(17th Conference on Integer Programming and Combinatorial Optimization),
+LNCS 8494, pages 150-161, 2014. </li>
+
+<li> A. Feldman, J. Koenemann, N. Olver, L. Sanità,
+<em>On the equivalence of the bidirected and hypergraphic relaxations for Steiner tree</em>,<br />
+<span class="conference">APPROX and RANDOM 2014</span> Proceedings, pages 176-191, 2014.</li>
+
+<li>J. Edmonds, L. Sanità,
+<em>Exponentiality of the exchange algorithm for finding another room-partitioning</em>,<br /> 
+<span class="journal">Discrete Applied Mathematics,</span>
+Volume 164, Part 1, Pages 86-91, 2014.</li>
+
+<li>  J. Koenemann, Sina Sadeghian, L. Sanità,
+<em>An LMP O(log n)-Approximation Algorithm for Node Weighted Prize Collecting Steiner Tree</em>,<br />
+<span class="conference">FOCS 2013</span>
+(54th Annual IEEE Symposium on Foundations of Computer Science).</li>
+
+<li>T. Rothvoss, L. Sanità,
+<em>0/1 Polytopes with quadratic Chvatal rank</em>,<br /> 
+<span class="conference">IPCO 2013</span>
+(16th Conference on Integer Programming and Combinatorial Optimization),
+LNCS Volume 7801, 2013, pages 349-361.</li>
+
+<li>  J. Koenemann, S. Sadeghian, L. Sanità,
+<em>Better Approximation Algorithms for Technology Diffusion</em>,<br /> 
+<span class="conference">ESA 2013</span> (21st European Symposium on Algorithms). </li> 
+
+<li>A. Bock, L. Sanità,
+<em>On the approximability of two capacitated vehicle routing problems</em>,<br /> 
+<span class="conference">INOC 2013</span>
+(International Network Optimization Conference), ENDS, Volume 41, Pages 519-526.</li>
+
+<li>J. Byrka, F. Grandoni, T. Rothvoss, L. Sanità,
+<em>Steiner Tree approximation via iterative randomized rounding</em>,<br /> 
+<span class="journal">Journal of the ACM, </span>  Volume 60 Issue 1, 2013.</li>
+
+<li>N. Haehnle, L. Sanità, R. Zenklusen,
+<em>Stable routing and unique-max coloring on trees</em>,<br />
+<span class="journal">Siam Journal on Discrete Mathematics</span>
+27(1), pages 109 - 125, 2013.</li>
+
+<li>G. Oriolo, L. Sanità, R. Zenklusen,
+<em>Network design with a discrete set of traffic matrices</em>,<br />
+<span class="journal">Operations Research Letters,</span>
+Volume 41, Issue 4, Pages 390-396, 2013.</li>
+
+<li>A. Bock, E. Grant, J. Koenemann, L. Sanità,
+<em>The School Bus Problem on Trees</em>,<br />
+<span class="journal">Algorithmica</span>, Algorithmica 67(1), Pages 49-64, 2013.</li>
+
+<li>A. Bock, E. Grant, J. Koenemann, L. Sanità,
+<em>The School Bus Problem on Trees</em>,<br /> 
+<span class="conference">ISAAC 2011</span>
+(22nd International Symposium on Algorithms and Computation).</li>
+
+<li>F. Eisenbrand, N. Kakimura, T. Rothvoss, L. Sanità,
+<em>Set covering with ordered replacement -- Additive and multiplicative gaps</em>,<br />
+<span class="conference">IPCO 2011</span>
+(15th Conference on Integer Programming and Combinatorial Optimization),
+LNCS 6655, pages 170-182, 2011.</li>
+
+<li>C. Buchheim, F. Liers, L. Sanità,
+<em>An exact algorithm for robust network design</em>,<br />
+<span class="conference">INOC 2011</span>
+(International Network Optimization Conference), LNCS 6701, pages 7-17, 2011.</li>
+
+<li>F. Grandoni, T. Rothvoss, L. Sanità,
+<em>From Uncertainty to Non-Linearity: Solving Virtual Private Network via Single-Sink Buy-at-Bulk</em>,<br />
+<span class="journal">Mathematics of Operations Research,</span>
+Vol. 36, No. 2, pages 185 - 204, (2011).</li>
+
+<li>J. Byrka, F. Grandoni, T. Rothvoss, L. Sanità,
+<em>An improved LP-based approximation for Steiner Tree</em>,<br />
+<span class="conference">STOC 2010</span>
+(Proceedings of the 42th ACM Symposium on Theory of Computing), pages 583-592.
+<u><em>Best Paper Award.</em></u></li>
+
+<li>J. Edmonds, L. Sanità,
+<em>On finding another room-partitioning of the vertices</em>,<br />
+<span class="conference">ISCO 2010</span> Proceedings, ENDM 36 (2010), pages 1257-1264.</li>
+
+<li>J. Byrka, A. Karrenbauer, L. Sanità,
+<em>The interval constrained 3-coloring problem</em>,<br />
+<span class="conference">LATIN 2010</span> Proceedings, A. Lopez-Ortiz (Ed.),
+LNCS 6034, pages 591-602, (2010).</li>
+
+<li>S. Fiorini, G. Oriolo, L. Sanità, D.O. Theis,
+<em>The VPN problem with concave costs</em>, <br />
+<span class="journal"> Siam Journal on Discrete Mathematics, </span>
+Volume 24, Issue 3, pages 1080-1090, (2010).</li>
+
+<li>F. Grandoni, G. Nicosia, G. Oriolo, L. Sanità,
+<em>Stable Routing under the Spanning Tree Protocol</em>,<br />
+<span class="journal"> Operations Research Letters</span>,
+Volume 38, Issue 5, pages 399-404 (2010).</li> 
+
+<li>T. Rothvoss, L. Sanità,
+<em>On the complexity of the asymmetric VPN problem</em>,<br />
+<span class="conference">APPROX and RANDOM 2009</span>
+Proceedings, Dinur et al. (Eds.), LNCS 5687, pages 326-338, 2009.</li>
+
+<li>P. Iovanna, G. Nicosia, G. Oriolo, L. Sanità, E. Sperduto,
+<em>Local restoration for trees and arborescences</em>,<br />
+<span class="conference"> FITraMEn 2008</span>
+Proceedings, R. Valadas and P. Salvador (Eds.), LNCS 5464, pages 130-140, 2009.</li>
+
+<li>L. Sanità,
+<em>Robust Network Design</em>,<br />
+<span class="other">Ph.D. thesis</span>,
+Università &ldquo;Sapienza&rdquo; di Roma, January 2009.</li>
+
+
+<li>L. Sanità, G. Oriolo, P. Iovanna, R. Sabella,
+<em>Communication Network</em>,<br /> 
+<span class="other">Patent</span>, WO2009106153A1 (September 3, 2009) and US20110176438 A1 (July 21, 2011).</li>
+
+</ul>
+
+<hr />
+<!-- ********************************************************************* -->
+
+<h3 class="anchor" id="students">Current students</h3>
+
+<span class="period">PhD students</span> <br />
+	<ul class="studentlist">
+	<li> <a href="https://uwaterloo.ca/combinatorics-and-optimization/about/people/group/50">
+		Sean Kafer</a>  </li>	
+<li> Dylan Hyatt-Denesik  </li>	
+	</ul>
+
+
+<span class="period">Postdocs </span> <br />
+	<ul class="studentlist">
+	<li> Charalampos Angelidakis </a>  </li>	
+	</ul>
+
+
+
+<!-- ********************************************************************* -->
+</div>
+
+</body>
 </html>
 
