@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Laura Sanità</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='description' content="Laura Sanità web page">
+	<meta name='keywords' content="Laura Sanità, Bocconi University, Associate Professor">
+	<style>
+		body {
+			font-family: 'Arial', sans;
+			margin: 0em;
+			padding: 0em;
+		}
+		
+		.anchor:before {
+			display: block;
+			content: " ";
+			margin-top: -3em;
+			height: 3em;
+			visibility: hidden;
+		}
+		
+		h1 {
+			margin-top: -5px;
+		}
+
+		h4 {
+			margin: 1.2em 0em 0.2em 0em;
+		}
+		
+		h2, h3, h4, h5 {
+			 color: #0c5299;
+		}
+		
+		li {
+			padding-bottom: 0.5em;
+		}
+		
+		hr {
+			margin-top: 2.2em;
+		}
+
+		table.bio tr td {
+			padding: 0.0em 0.5em 0.0em 0.5em;
+			vertical-align: top;
+		}
+
+		table.bio tr td:first-of-type {
+			padding-left: 0em;
+			text-align: right;
+			font-weight: bold;
+			white-space: nowrap;
+			color: #888;
+		}
+
+		img.pic {
+			/*float: right;*/
+			vertical-align: top;
+			padding-right: 1em;
+			margin-bottom: 1em;
+			/*width: 256px;*/
+		}
+
+		img.nil {
+			display: none;
+		}
+
+		h2.position {
+			margin-bottom: 0.2em;
+		}
+
+		span.period {
+			font-weight: bold;
+			color: #888;
+		}
+
+		span.period a {
+			font-weight: normal;
+			text-decoration: none;
+			color: rgba(0, 0, 128, 1.0);
+		}
+
+		span.remark {
+			color: #000;
+		}
+
+		/* cyan 26bd9e, blue 4a99c9, orange ff694c */
+		span.journal {
+			color: #ff694c /*rgba(192, 0, 0, 1.0)*/;
+		}
+
+		span.conference {
+			color: #4a99c9 /*rgba(125, 38, 205, 1.0)*/;
+		}
+
+		span.other {
+			color: #26bd9e /*rgba(255, 127, 0, 1.0)*/;
+		}
+
+		ul.studentlist {
+			padding-bottom: 0.3em;
+		}
+
+		a {
+			text-decoration: underline dotted #acf;
+			text-underline-offset: 4px;
+			color: #049;
+		}
+
+		div.nav {
+			background-color: #000;
+			font-family: 'Arial', sans;
+			font-size: 100%;
+			overflow: hidden;
+			position: fixed;
+			z-index: 1000;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			margin: 0em;
+			padding: 0em;
+		}
+
+		/* navigation bar: logo */
+		div.nav > a {
+			float: right;
+
+			display: inline-block;
+			padding: 0.5em 1.2em 0.55em 1.2em;
+			margin: 0em;
+			color: rgba(255, 255, 255, 1.0);
+		}
+
+		div.nav > a > img {
+			height: 2em;
+			margin: 0em;
+			padding: 0em;
+			vertical-align: bottom;
+		}
+
+		/* navigation bar: sections */
+		div.nav > ul {
+			float: none;
+			list-style: none;
+			margin: 0em;
+			padding: 0em 0em 0em 1.2em;
+		}
+
+		div.nav > ul > li {
+			display: inline;
+			margin: 0em;
+			padding: 0em;
+		}
+
+		div.nav > ul > li > a {
+			display: inline-block;
+			padding: 1em 1.2em 1em 1.2em;
+			color: rgba(255, 255, 255, 1.0);
+			text-decoration: none;
+		}
+
+		div.nav > ul > li a:hover {
+			background-color: #0d549b;
+			/*color: rgba(240, 60, 70, 1.0);*/
+			/*rgba(252, 214, 52, 1.0);*/
+			/*rgba(0, 130, 255, 1.0);*/
+		}
+		
+		div.content {
+			padding: 6em 8em 2em 8em;
+			margin: 0em;
+			text-align: justify;
+		}
+
+		div.inline {
+			display: inline-block;
+		}
+		
+		@media (max-width: 720px) {
+			div.content {
+				padding: 4em 0.5em 1em 0.5em;
+			}
+			
+			div.nav > ul {
+				padding: 0em 0em 0em 0.5em;
+			}
+			
+			div.nav > ul > li > a {
+				padding: 1em 0.5em 1em 0.5em;
+			}
+			
+			div.nav > ul > li.optional {
+				display: none;
+			}
+
+			table.bio tr td {
+				display: block;
+			}
+
+			table.bio tr td:first-of-type {
+				text-align: left;
+				padding-top: 0.3em;
+			}
+		}
+	</style>
+</head>
+
+
+<body>
+
+<!-- ********************************************************************* -->
+<div class="nav">
+<a href="https://www.unibocconi.eu/"><img src="logo-bocconi.png" alt="Bocconi" /></a>
+<ul>
+	<li><a href="#">Home</a></li>
+	<li class="optional"><a href="#bio">Bio</a></li>
+	<li class="optional"><a href="#activities">Activities</a></li>
+	<li><a href="#pub">Publications</a></li>
+	<li class="optional"><a href="#students">Students</a></li>
+</ul>
+</div>
+
+<div class="content">
+
+<!-- ********************************************************************* -->
+<h2>Statement for EATCS Nomination</h2>
+
+<p>
+I am honored to be nominated to be a full member of the EATCS. The EATCS plays a crucial role in fostering excellence in theoretical computer science and in leading our international community. I would be glad to contribute to these efforts and to strengthen the role of the EATCS in shaping the future of our field.
+</p>
+
+<p>
+An important direction for our community is to attract more young talent. While our research strength matches that of the United States, their institutions often appear more attractive to students, especially those coming from outside Europe. Bridging this gap is essential, and I believe my experience as a faculty member in both North America and Europe can be helpful in this respect.
+</p>
+
+<p>
+I also see the need to continue advancing open access publishing. Significant improvements have been made in recent years, but I am convinced that we must keep pushing in this direction.
+</p>
+
+<p>
+Another key issue is ensuring that travel for conferences and workshops, which remains fundamental for meetings and collaborations, is balanced with sustainability concerns. We should adopt a more global perspective when selecting locations, ensuring fair consideration of different regions and, whenever possible, clustering major events to reduce unnecessary travel.
+</p>
+
+<p>
+Finally, I am fully aware of the importance of continuous efforts toward diversity, equity, and inclusion. I am glad to see progress in recent years, but there is still more to be done—for example, making childcare services a standard feature of our events.
+</p>
+
+
+<!-- ********************************************************************* -->
+</div>
+
+</body>
+</html>
+
